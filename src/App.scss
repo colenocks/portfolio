@@ -1,0 +1,89 @@
+@import "./components/scss/config";
+@import "./components/scss/navbar";
+
+* {
+  list-style: none;
+}
+
+body {
+  background: $mainGrey;
+  @include backGround;
+  color: set-text-color($mainGrey);
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Inconsolata", monospace;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+
+  &.lg-heading {
+    font-size: 4rem;
+    color: $activeBlue;
+    letter-spacing: 10px;
+
+    span {
+      color: $cyan;
+      letter-spacing: 5px;
+      font-weight: 200 !important;
+    }
+  }
+
+  &.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($darkGrey, 2), 0.5);
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  list-style-position: outside;
+  list-style-type: circle;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: $mainBlue;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+//Button styles
+.btn_ {
+  display: block;
+  padding: 0.5rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+
+  &:hover {
+    background: $mainBlue;
+    color: set-text-color($mainBlue);
+  }
+}
+
+.btn_-light {
+  @extend .btn_;
+  background: lighten($mainGrey, 50);
+  color: #333;
+}
+
+.btn_-dark {
+  @extend .btn_;
+  background: darken($mainGrey, 50);
+  color: #fff;
+}
