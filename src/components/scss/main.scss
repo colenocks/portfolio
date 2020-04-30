@@ -1,0 +1,28 @@
+@import "config";
+@import "navbar";
+
+main {
+  padding: 3rem;
+  height: 100%;
+
+  .icons {
+    margin-top: 0.8rem;
+
+    a {
+      padding: 0.4rem;
+
+      &:hover {
+        color: $activeBlue;
+        @include easeOut;
+      }
+    }
+  }
+  &.home {
+    overflow: hidden;
+    h2 {
+      margin-top: 20vh !important;
+    }
+  }
+}
+
+@import "mobile";
