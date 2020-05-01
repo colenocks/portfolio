@@ -1,0 +1,172 @@
+.menu-btn {
+  background: $darkGrey;
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  border: 1px solid set-text-color($mainGrey);
+  border-radius: 3px;
+  padding: 5px;
+  padding-bottom: 0;
+  cursor: pointer;
+  @include easeOut;
+
+  &:hover {
+    background: set-text-color($mainGrey);
+    .btn-line {
+      background: #000;
+    }
+  }
+
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 7px 0;
+    background: set-text-color($mainGrey);
+    @include easeOut;
+  }
+
+  //transition to X close button
+  &.close {
+    transform: rotate(180deg);
+
+    .btn-line {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 6px);
+      }
+    }
+
+    .btn-line {
+      &:nth-child(2) {
+        opacity: 0;
+      }
+    }
+
+    .btn-line {
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+  }
+}
+
+.hide-navbar {
+  position: fixed;
+  right: 0;
+  z-index: 3;
+  top: 35px;
+  width: 35px;
+  height: 37px;
+  background: $darkGrey;
+}
+
+//Overlay for the menu
+.menu {
+  position: fixed;
+  top: 35px;
+  right: calc(35px + 40px);
+  height: 50px;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden;
+
+  &.show {
+    visibility: visible;
+  }
+
+  &-branding,
+  &-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    float: left;
+    width: 100%;
+    height: 37px;
+    overflow: hidden;
+  }
+
+  //menu-nav
+  &-nav {
+    margin: 0;
+    padding: 0;
+    width: calc(100vw - 75px);
+    display: flex;
+    // justify-content: space-evenly;
+    background: darken($mainGrey, 5);
+    list-style: none;
+    //move towards the left
+    transform: translate3d(calc(100vw + 75px), 0, 0);
+    @include easeOut;
+
+    //menu-nav show
+    &.show {
+      //Slide from the top
+      transform: translate3d(75px, 0, 0);
+    }
+  }
+
+  //menu-branding
+  &-branding {
+    background: $mainGrey;
+    transform: translate3d(100%, 0, 0);
+    @include easeOut;
+
+    &.show {
+      //Slide from the bottom
+      transform: translate3d(0, 0, 0);
+    }
+
+    .portrait {
+      width: 200px;
+      height: 200px;
+      background: url("");
+      border: solid 3px $mainBlue;
+      border-radius: 50%;
+    }
+  }
+
+  .nav-item {
+    display: inline-block;
+    text-align: center;
+    border-right: 1px solid $lightGrey;
+    padding: 1% 2%;
+    // transform: translate3d(calc(100vw + 75px), 0, 0);
+    @include easeOut;
+
+    &:last-child {
+      border-right: 0;
+    }
+    &.show {
+      //slide from the right
+      transform: translate3d(0, 0, 0);
+
+      .current {
+        color: $mainBlue;
+      }
+    }
+  }
+
+  .nav-link {
+    position: relative;
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 400;
+    color: set-text-color($mainGrey);
+    @include easeOut;
+
+    &:hover {
+      color: $mainBlue;
+      text-decoration: underline;
+    }
+  }
+}
+
+//delay each nav item slide by a few secs
+@for $x from 1 through 6 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.2s;
+  }
+}
