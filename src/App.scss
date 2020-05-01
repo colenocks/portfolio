@@ -58,6 +58,15 @@ header {
   color: $mainBlue;
 }
 
+.text-center {
+  text-align: center;
+}
+.vertically-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .wrapper {
   height: 100%;
   width: 100%;
