@@ -48,7 +48,7 @@ class Navbar extends Component {
           <nav className="menu">
             <ul className="menu-nav">
               <li className="nav-item">
-                <Link to="/index" className="nav-link current">
+                <Link to="/" className="nav-link current">
                   Home
                 </Link>
               </li>
@@ -58,12 +58,12 @@ class Navbar extends Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/tech" className="nav-link">
+                <Link to="/techstack" className="nav-link">
                   Tech Stack
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/project" className="nav-link">
+                <Link to="/projects" className="nav-link">
                   My Projects
                 </Link>
               </li>

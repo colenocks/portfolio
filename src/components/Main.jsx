@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import "./scss/main.scss";
 
 class Main extends Component {
@@ -37,6 +38,7 @@ class Main extends Component {
             </a>
           </div>
         </main>
+        <Footer />
       </React.Fragment>
     );
   }
