@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Main from "./components/Main";
+import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Techstack from "./components/Techstack";
@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="wrapper">
       <Switch>
-        <Route exact path="/" component={Main} />
+        <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/techstack" component={Techstack} />
         <Route exact path="/projects" component={Projects} />

@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "./scss/main.scss";
 
-class Main extends Component {
+class Home extends Component {
   render() {
     return (
       <React.Fragment>
@@ -44,4 +44,4 @@ class Main extends Component {
   }
 }
 
-export default Main;
+export default Home;
