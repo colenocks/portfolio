@@ -21,24 +21,23 @@ h2,
 h3 {
   margin: 0;
   font-weight: 400;
+}
+.lg-heading {
+  font-size: 4rem;
+  color: $activeBlue;
+  letter-spacing: 10px;
 
-  &.lg-heading {
-    font-size: 4rem;
-    color: $activeBlue;
-    letter-spacing: 10px;
-
-    span {
-      color: $cyan;
-      letter-spacing: 5px;
-      font-weight: 200 !important;
-    }
+  span {
+    color: $cyan;
+    letter-spacing: 5px;
+    font-weight: 200 !important;
   }
+}
 
-  &.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(lighten($darkGrey, 2), 0.5);
-  }
+.sm-heading {
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+  background: rgba(lighten($darkGrey, 2), 0.5);
 }
 
 a {

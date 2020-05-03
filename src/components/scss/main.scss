@@ -13,16 +13,40 @@ main {
 
       &:hover {
         color: $activeBlue;
-        @include easeOut;
       }
     }
   }
   &.home {
     overflow: hidden;
     h2 {
-      margin-top: 20vh !important;
+      margin-top: 15vh !important;
     }
+  }
+  .title {
+    margin-top: 15vh !important;
   }
 }
 
+.about {
+  .about-info {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "bioimage bio";
+
+    .bioimage {
+      grid-area: bioimage;
+      border: 3px solid $mainBlue;
+      margin: auto;
+      //image responsiveness
+      max-width: 80%;
+      height: auto;
+      display: block;
+    }
+    .bio {
+      text-align: start;
+      grid-area: bio;
+    }
+  }
+}
 @import "mobile";
