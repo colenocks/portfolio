@@ -1,0 +1,124 @@
+//Widescreens
+@include mediaXl {
+}
+//Desktops and Laptop
+@include mediaLg {
+}
+
+//Tablet and small Laptops
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .menu-nav {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 2% 2%;
+    width: 25vw;
+    // transform: translate3d(100vw, 0, 0);
+    height: auto;
+    justify-content: center;
+    align-content: flex-start;
+
+    &.show {
+      transform: translate3d(100vw, 0, 0);
+    }
+
+    .nav-item {
+      border: 0;
+      display: flex;
+      padding: 10%;
+      :focus {
+        color: $activeBlue;
+      }
+    }
+    .nav-item:not(:last-child) {
+      border-bottom: 1px solid $mainGrey;
+    }
+  }
+
+  .about {
+    .about-info {
+      gap: 20px 0;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "bioimage"
+        "bio";
+
+      .bioimage {
+        max-width: 30%;
+      }
+      .bio {
+        text-align: center;
+      }
+    }
+  }
+}
+
+//Smartphones
+@include mediaSm {
+  .menu-nav {
+    width: 40vw;
+    align-content: flex-start;
+    .nav-item {
+      @include easeOut;
+      padding: 8%;
+      .nav-link {
+        // font-size: 1.1rem;
+        text-align: start;
+        text-decoration: none;
+        // border: green 1px solid;
+      }
+      &:hover {
+        transform: border-bottom 0.5s ease-out;
+      }
+    }
+    .nav-item:not(:last-child) {
+      border-bottom: 1px solid $mainGrey;
+      //   @include easeOut;
+    }
+  }
+
+  main {
+    margin: 0 auto;
+    .home h2 {
+      padding-top: 0;
+    }
+  }
+
+  .about-info {
+    gap: 20px 0;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "bioimage"
+      "bio";
+  }
+
+  .techstack {
+    .tech {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "front"
+        "database"
+        "back"
+        "analysis"
+        "cloud"
+        "tools";
+
+      ul {
+        justify-content: center;
+        li {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
