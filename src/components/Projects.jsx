@@ -4,12 +4,17 @@ import Navbar from "./Navbar";
 import "./scss/main.scss";
 
 class Projects extends Component {
-  state = {};
   render() {
     return (
       <div>
         <Navbar />
-        <div>This is Projects</div>
+        <div className="flex-center">
+          <main>
+            <h3 className="sm-heading title">
+              Project section will be up in less than 12hrs in...
+            </h3>
+          </main>
+        </div>
         <Footer />
       </div>
     );

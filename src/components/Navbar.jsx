@@ -77,6 +77,9 @@ class Navbar extends Component {
                   Contact Me
                 </Link>
               </li>
+              {/* <li className="nav-item">
+                <i className="fa fa-thumb-tack" aria-hidden="true"></i>
+              </li> */}
             </ul>
           </nav>
         </header>
