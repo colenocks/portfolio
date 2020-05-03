@@ -60,7 +60,7 @@ header {
 .text-center {
   text-align: center;
 }
-.vertically-center {
+.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,4 +94,14 @@ header {
   @extend .btn_;
   background: darken($mainGrey, 50);
   color: #fff;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+  margin: 0 auto;
+  color: set-text-color($mainGrey);
+  letter-spacing: 2px;
 }
