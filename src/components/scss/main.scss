@@ -49,4 +49,81 @@ main {
     }
   }
 }
+
+.techstack {
+  padding: 1rem;
+
+  .tech {
+    margin: 2% 1%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1fr, 3);
+    grid-template-areas:
+      "front database back"
+      "analysis cloud tools";
+
+    .front {
+      grid-area: front;
+    }
+    .back {
+      grid-area: back;
+    }
+    .tools {
+      grid-area: tools;
+    }
+    .database {
+      grid-area: database;
+    }
+    .analysis {
+      grid-area: analysis;
+    }
+    .cloud {
+      grid-area: cloud;
+    }
+  }
+
+  .front,
+  .back,
+  .database,
+  .tools,
+  .analysis,
+  .cloud {
+    height: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    background: lighten($mainGrey, 5);
+    text-align: center;
+    border-bottom: $mainBlue solid 5px;
+    margin-bottom: 20px;
+
+    h2 {
+      width: 100%;
+      color: $cyan;
+      border-radius: 5px;
+      background: lighten($mainGrey, 10);
+      text-transform: uppercase;
+    }
+
+    ul {
+      color: $lightGrey;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      padding: 1% 1%;
+
+      li {
+        text-align: start;
+        margin: 2% 2%;
+
+        h4 {
+          margin: 0;
+        }
+        progress[value] {
+          appearance: none;
+        }
+      }
+    }
+  }
+}
+
 @import "mobile";

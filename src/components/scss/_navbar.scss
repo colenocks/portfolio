@@ -32,7 +32,7 @@
 
     .btn-line {
       &:nth-child(1) {
-        transform: rotate(45deg) translate(8px, 6px);
+        transform: rotate(45deg) translate(8px, 7px);
       }
     }
 
@@ -50,101 +50,62 @@
   }
 }
 
-.hide-navbar {
-  position: fixed;
-  right: 0;
-  z-index: 3;
-  top: 35px;
-  width: 35px;
-  height: 37px;
-  background: $darkGrey;
-}
-
 //Overlay for the menu
 .menu {
   position: fixed;
   top: 35px;
-  right: calc(35px + 40px);
+  left: -100vw;
   height: 50px;
   width: 100%;
   opacity: 0.9;
-  visibility: hidden;
+  // visibility: hidden;
 
   &.show {
     visibility: visible;
   }
 
-  &-branding,
   &-nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    float: left;
-    width: 100%;
     height: 37px;
     overflow: hidden;
-  }
-
-  //menu-nav
-  &-nav {
     margin: 0;
     padding: 0;
     width: calc(100vw - 75px);
-    display: flex;
-    // justify-content: space-evenly;
     background: darken($mainGrey, 5);
     list-style: none;
     //move towards the left
-    transform: translate3d(calc(100vw + 75px), 0, 0);
-    @include easeOut;
+    // transform: translate3d($move, 0, 0);
+    transition: transform 0.5s ease-out;
 
     //menu-nav show
     &.show {
-      //Slide from the top
-      transform: translate3d(75px, 0, 0);
-    }
-  }
-
-  //menu-branding
-  &-branding {
-    background: $mainGrey;
-    transform: translate3d(100%, 0, 0);
-    @include easeOut;
-
-    &.show {
-      //Slide from the bottom
-      transform: translate3d(0, 0, 0);
-    }
-
-    .portrait {
-      width: 200px;
-      height: 200px;
-      background: url("");
-      border: solid 3px $mainBlue;
-      border-radius: 50%;
+      //Slide from the left
+      transform: translate3d(calc(100vw), 0, 0);
     }
   }
 
   .nav-item {
     display: inline-block;
-    text-align: center;
-    border-right: 1px solid $lightGrey;
-    padding: 1% 2%;
-    // transform: translate3d(calc(100vw + 75px), 0, 0);
-    @include easeOut;
+    text-align: start;
+    border-right: 1px solid $mainGrey;
+    padding: 3% 2%;
 
     &:last-child {
       border-right: 0;
     }
     &.show {
       //slide from the right
-      transform: translate3d(0, 0, 0);
 
       .current {
         color: $mainBlue;
       }
+    }
+    &:hover {
+      background: lighten($darkGrey, 10);
     }
   }
 
@@ -155,18 +116,19 @@
     text-decoration: none;
     font-weight: 400;
     color: set-text-color($mainGrey);
-    @include easeOut;
+    // @include easeOut;
 
     &:hover {
       color: $mainBlue;
-      text-decoration: underline;
     }
   }
 }
 
 //delay each nav item slide by a few secs
-@for $x from 1 through 6 {
-  .nav-item:nth-child(#{$x}) {
-    transition-delay: $x * 0.2s;
-  }
-}
+// @for $x from 1 through 6 {
+//   .nav-item:nth-child(#{$x}) {
+//     transition-delay: $x * 0.2s;
+//   }
+// }
+
+@import "mobile";
