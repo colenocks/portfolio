@@ -28,6 +28,7 @@ main {
 }
 
 .about {
+  padding: 1rem;
   .about-info {
     display: grid;
     column-gap: 20px;
@@ -138,6 +139,40 @@ main {
 
         progress::-webkit-progress-bar {
           background: $lightGrey;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  padding: 1rem;
+  .boxes {
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    div {
+      font-size: 1.2rem;
+      border: 1px solid #fff;
+      padding: 1rem 1rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      @include easeOut;
+
+      &:hover {
+        padding: 1rem 1.5rem;
+        background: $mainBlue;
+        color: set-text-color($mainBlue);
+
+        a {
+          text-decoration: underline;
+        }
+
+        span {
+          color: set-text-color($mainBlue);
         }
       }
     }

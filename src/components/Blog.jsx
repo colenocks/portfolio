@@ -9,7 +9,11 @@ class Blog extends Component {
     return (
       <div>
         <Navbar />
-        <div>This is Blog; coming soon</div>
+        <div className="flex-center">
+          <main>
+            <h3 className="sm-heading title">Coming soon...</h3>
+          </main>
+        </div>
         <Footer />
       </div>
     );
