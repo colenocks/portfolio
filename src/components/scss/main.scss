@@ -37,8 +37,9 @@ main {
 
     .bioimage {
       grid-area: bioimage;
-      border: 3px solid $mainBlue;
+      border: 3px solid $cyan;
       margin: auto;
+      border-radius: 50px;
       //image responsiveness
       max-width: 50%;
       height: auto;
@@ -197,6 +198,8 @@ main {
     }
 
     .proj-desc {
+      padding: 2% 1%;
+      background: darken($mainGrey, 5);
       margin: 2% 0;
       text-align: start;
     }
@@ -204,6 +207,7 @@ main {
     .tools {
       margin: 1% 0;
       color: $cyan;
+      text-align: start;
       span {
         color: $mainOrange;
         text-transform: uppercase;

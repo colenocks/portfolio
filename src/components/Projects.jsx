@@ -2,6 +2,13 @@ import React, { Component } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import "./scss/main.scss";
+import workplace from "../assets/workplace.jpg";
+import cyob from "../assets/cyob.jpg";
+import snakerace from "../assets/snakerace.jpg";
+import hoop from "../assets/basketball-hoop.jpg";
+import balon from "../assets/balon-d-or2019.jpg";
+import note from "../assets/background-note.jpg";
+import cmdb from "../assets/cmdb.jpg";
 
 class Projects extends Component {
   render() {
@@ -14,14 +21,10 @@ class Projects extends Component {
               My <span className="text-secondary">Projects</span>
             </h1>
           </div>
-          <h2 className="sm-heading">These are some of my works...</h2>
+          <h3 className="sm-heading">These are some of my works...</h3>
           <div className="project-info">
             <div className="proj">
-              <img
-                className="proj-image"
-                src={require("../assets/workplace.jpg")}
-                alt="tictactoe"
-              />
+              <img className="proj-image" src={workplace} alt="tictactoe" />
               <h4>Tic-Tac-Toe</h4>
               <p className="proj-desc">A Simple jQuery based game, tictactoe</p>
               <p className="tools">
@@ -30,6 +33,7 @@ class Projects extends Component {
               <button className="btn_dark">
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://github.com/colenocks/Simple_TicTacToe_Game"
                   className="btn-dark"
                 >
@@ -38,11 +42,7 @@ class Projects extends Component {
               </button>
             </div>
             <div className="proj">
-              <img
-                className="proj-image"
-                src={require("../assets/cyob.jpg")}
-                alt="cyob"
-              />
+              <img className="proj-image" src={cyob} alt="cyob" />
               <h4>Cycle of benefits</h4>
               <p className="proj-desc">
                 A crowdsourcing platform of environmentally related projects
@@ -56,6 +56,7 @@ class Projects extends Component {
               <button className="btn_dark">
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://github.com/colenocks/cycle_of_benefits"
                   className="btn-dark"
                 >
@@ -64,11 +65,7 @@ class Projects extends Component {
               </button>
             </div>
             <div className="proj">
-              <img
-                className="proj-image"
-                src={require("../assets/snakerace.jpg")}
-                alt="snakerace"
-              />
+              <img className="proj-image" src={snakerace} alt="snakerace" />
               <h4>Snakerace</h4>
               <p className="proj-desc">
                 A real time multiplayer functionality was added to the classic
@@ -82,6 +79,7 @@ class Projects extends Component {
               <button className="btn_dark">
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://github.com/colenocks/Multiplayer_Snake_Game_EIS"
                   className="btn-dark"
                 >
@@ -90,11 +88,7 @@ class Projects extends Component {
               </button>
             </div>
             <div className="proj">
-              <img
-                className="proj-image"
-                src={require("../assets/basketball-hoop.jpg")}
-                alt="hoops"
-              />
+              <img className="proj-image" src={hoop} alt="hoops" />
               <h4>Hoops</h4>
               <p className="proj-desc">
                 This HTML5 canvas based basketball-like game was developed as a
@@ -108,6 +102,7 @@ class Projects extends Component {
               <button className="btn_dark">
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://github.com/colenocks/hoops"
                   className="btn-dark"
                 >
@@ -116,11 +111,7 @@ class Projects extends Component {
               </button>
             </div>
             <div className="proj">
-              <img
-                className="proj-image"
-                src={require("../assets/balon-d-or2019.jpg")}
-                alt="pic-puzzle"
-              />
+              <img className="proj-image" src={balon} alt="pic-puzzle" />
               <h4>Pic-Puzzle</h4>
               <p className="proj-desc">
                 A memory card flip JavaScript application
@@ -131,6 +122,7 @@ class Projects extends Component {
               <button className="btn_dark">
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://github.com/colenocks/pic-puzzle"
                   className="btn-dark"
                 >
@@ -139,11 +131,7 @@ class Projects extends Component {
               </button>
             </div>
             <div className="proj">
-              <img
-                className="proj-image"
-                src={require("../assets/background-note.jpg")}
-                alt="my portfolio"
-              />
+              <img className="proj-image" src={note} alt="my portfolio" />
               <h4>My Portfolio</h4>
               <p className="proj-desc">
                 A personal portfolio built using React
@@ -154,6 +142,7 @@ class Projects extends Component {
               <button className="btn_dark">
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://github.com/colenocks/portfolio"
                   className="btn-dark"
                 >
@@ -164,7 +153,7 @@ class Projects extends Component {
             <div className="proj">
               <img
                 className="proj-image"
-                src={require("../assets/cmdb.jpg")}
+                src={cmdb}
                 alt="contact management app"
               />
               <h4>Contact Management App</h4>
@@ -178,6 +167,7 @@ class Projects extends Component {
               <button className="btn_dark">
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://github.com/colenocks/MyCMDBApp"
                   className="btn-dark"
                 >

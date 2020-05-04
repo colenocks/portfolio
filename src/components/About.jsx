@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import coleImage from "../assets/coleImage.jpg";
 import "./scss/main.scss";
 
 class About extends Component {
@@ -17,11 +18,7 @@ class About extends Component {
           </div>
           <h3 className="sm-heading">Here are a few information about me...</h3>
           <div className="about-info">
-            <img
-              className="bioimage"
-              src={require("../assets/coleImage.jpg")}
-              alt="Coleman Enocks"
-            />
+            <img className="bioimage" src={coleImage} alt="Coleman Enocks" />
             <div className="bio">
               <h3 className="text-secondary">BIO</h3>
               <p>
