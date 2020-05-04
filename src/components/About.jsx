@@ -19,7 +19,7 @@ class About extends Component {
           <div className="about-info">
             <img
               className="bioimage"
-              src={require("../assets/coleImage2.jpg")}
+              src={require("../assets/coleImage.jpg")}
               alt="Coleman Enocks"
             />
             <div className="bio">
@@ -41,10 +41,10 @@ class About extends Component {
               </p>
 
               <p>
-                I look forward to the opportunity to progress further into the
-                my web development career. I have more than enough knowledge to
-                get started with lots of creative ideas as I continue on my
-                journey to becoming a Full Stack Engineer. I have what it takes!
+                I look forward to the opportunity to progress further into my
+                web development career. I have more than enough knowledge to get
+                started with lots of creative ideas as I continue on my journey
+                to becoming a Full Stack Engineer. I have what it takes!
               </p>
             </div>
           </div>

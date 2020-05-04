@@ -142,23 +142,19 @@ class Techstack extends Component {
               <h2>Cloud Services</h2>
               <ul>
                 <li className="">
-                  <h4>AWS EC2 </h4>
+                  <h4>Amazon EC2 </h4>
                   <progress value="30" max="100"></progress>
                 </li>
                 <li className="">
-                  <h4>AWS RDS </h4>
+                  <h4>Amazon RDS </h4>
                   <progress value="20" max="100"></progress>
                 </li>
                 <li className="">
-                  <h4>AWS Elastic Beanstalk </h4>
+                  <h4>Amazon Elastic Beanstalk </h4>
                   <progress value="30" max="100"></progress>
                 </li>
                 <li className="">
-                  <h4>AWS Instances </h4>
-                  <progress value="20" max="100"></progress>
-                </li>
-                <li className="">
-                  <h4>AWS IAM </h4>
+                  <h4>Amazon Instances </h4>
                   <progress value="20" max="100"></progress>
                 </li>
               </ul>
