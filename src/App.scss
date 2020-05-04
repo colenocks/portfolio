@@ -75,23 +75,24 @@ header {
 //Button styles
 .btn_ {
   display: block;
+  font-size: 1rem;
   padding: 0.5rem;
   border: 0;
   margin-bottom: 0.3rem;
 
   &:hover {
-    background: $mainBlue;
-    color: set-text-color($mainBlue);
+    background: darken($mainGrey, 5);
+    color: #000 !important;
   }
 }
 
-.btn_-light {
+.btn_light {
   @extend .btn_;
   background: lighten($mainGrey, 50);
   color: #333;
 }
 
-.btn_-dark {
+.btn_dark {
   @extend .btn_;
   background: darken($mainGrey, 50);
   color: #fff;
