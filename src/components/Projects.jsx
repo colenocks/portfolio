@@ -20,12 +20,19 @@ class Projects extends Component {
               <img
                 className="proj-image"
                 src={require("../assets/workplace.jpg")}
-                alt="Project1"
+                alt="tictactoe"
               />
               <h4>Tic-Tac-Toe</h4>
               <p className="proj-desc">A Simple jQuery based game, tictactoe</p>
+              <p className="tools">
+                <span>Tools: </span> HTML, CSS, JavaScript
+              </p>
               <button className="btn_dark">
-                <a href="#" className="btn-dark">
+                <a
+                  target="_blank"
+                  href="https://github.com/colenocks/Simple_TicTacToe_Game"
+                  className="btn-dark"
+                >
                   <i className="fab fa-github"> View on Github</i>
                 </a>
               </button>
@@ -42,8 +49,16 @@ class Projects extends Component {
                 publicly available for interested persons to work on and gain
                 rewards
               </p>
+              <p className="tools">
+                <span>Tools: </span> HTML, CSS, JavaScript, Node, Express,
+                Amazon RDS, Amazon EC2, SQL,
+              </p>
               <button className="btn_dark">
-                <a href="#" className="btn-dark">
+                <a
+                  target="_blank"
+                  href="https://github.com/colenocks/cycle_of_benefits"
+                  className="btn-dark"
+                >
                   <i className="fab fa-github"> View on Github</i>
                 </a>
               </button>
@@ -61,8 +76,15 @@ class Projects extends Component {
                 package dependency. The game was developed using vanilla
                 Javascript and Node JS.
               </p>
+              <p className="tools">
+                <span>Tools: </span> HTML, CSS, JavaScript, Node JS, Express
+              </p>
               <button className="btn_dark">
-                <a href="#" className="btn-dark">
+                <a
+                  target="_blank"
+                  href="https://github.com/colenocks/Multiplayer_Snake_Game_EIS"
+                  className="btn-dark"
+                >
                   <i className="fab fa-github"> View on Github</i>
                 </a>
               </button>
@@ -80,8 +102,15 @@ class Projects extends Component {
                 his daughter and all who lost their lives on the 26th of january
                 2020.
               </p>
+              <p className="tools">
+                <span>Tools: </span> HTML5, CSS, JavaScript, Node, Express
+              </p>
               <button className="btn_dark">
-                <a href="#" className="btn-dark">
+                <a
+                  target="_blank"
+                  href="https://github.com/colenocks/hoops"
+                  className="btn-dark"
+                >
                   <i className="fab fa-github"> View on Github</i>
                 </a>
               </button>
@@ -96,8 +125,15 @@ class Projects extends Component {
               <p className="proj-desc">
                 A memory card flip JavaScript application
               </p>
+              <p className="tools">
+                <span>Tools: </span> HTML, CSS, JavaScript
+              </p>
               <button className="btn_dark">
-                <a href="#" className="btn-dark">
+                <a
+                  target="_blank"
+                  href="https://github.com/colenocks/pic-puzzle"
+                  className="btn-dark"
+                >
                   <i className="fab fa-github"> View on Github</i>
                 </a>
               </button>
@@ -112,8 +148,15 @@ class Projects extends Component {
               <p className="proj-desc">
                 A personal portfolio built using React
               </p>
+              <p className="tools">
+                <span>Tools: </span> HTML, CSS, JavaScript, React
+              </p>
               <button className="btn_dark">
-                <a href="#" className="btn-dark">
+                <a
+                  target="_blank"
+                  href="https://github.com/colenocks/portfolio"
+                  className="btn-dark"
+                >
                   <i className="fab fa-github"> View on Github</i>
                 </a>
               </button>
@@ -126,10 +169,18 @@ class Projects extends Component {
               />
               <h4>Contact Management App</h4>
               <p className="proj-desc">
-                A Simple contact management application using C# (Visual Studio)
+                A Simple contact management database application using C#
+                (Visual Studio)
+              </p>
+              <p className="tools">
+                <span>Tools: </span> C#, Windows Forms, XML
               </p>
               <button className="btn_dark">
-                <a href="" className="btn-dark">
+                <a
+                  target="_blank"
+                  href="https://github.com/colenocks/MyCMDBApp"
+                  className="btn-dark"
+                >
                   <i className="fab fa-github"> View on Github</i>
                 </a>
               </button>

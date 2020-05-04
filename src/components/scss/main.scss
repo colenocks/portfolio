@@ -200,6 +200,15 @@ main {
       margin: 2% 0;
       text-align: start;
     }
+
+    .tools {
+      margin: 1% 0;
+      color: $cyan;
+      span {
+        color: $mainOrange;
+        text-transform: uppercase;
+      }
+    }
   }
 
   img {
