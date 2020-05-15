@@ -31,8 +31,8 @@ class Contact extends Component {
             </div>
             <div>
               <span className="text-secondary">LinkedIn: </span>
-              <a href="https://www.linkedin.com/in/coleman-enocks-573a83b7">
-                https://www.linkedin.com/in/coleman-enocks-573a83b7
+              <a href="https://www.linkedin.com/in/coleman-enocks">
+                https://www.linkedin.com/in/coleman-enocks
               </a>
             </div>
             <div>
