@@ -25,8 +25,8 @@ class Contact extends Component {
             </div>
             <div>
               <span className="text-secondary">Twitter: </span>
-              <a href="https://www.linkedin.com/@encole9">
-                https://www.linkedin.com/@encole9
+              <a href="https://www.twitter.com/@encole9">
+                https://www.twitter.com/@encole9
               </a>
             </div>
             <div>
