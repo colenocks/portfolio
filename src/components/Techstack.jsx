@@ -1,170 +1,109 @@
-import React, { Component } from "react";
+import React from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import "./scss/main.scss";
+import CSharp from "../assets/skills/C-Sharp.png";
+import Git from "../assets/skills/Git.png";
+import HTML5 from "../assets/skills/HTML-5.png";
+import CSS3 from "../assets/skills/CSS-3.png";
+import Java from "../assets/skills/Java.png";
+import JavaScript from "../assets/skills/JavaScript.png";
+import MongoDB from "../assets/skills/MongoDB.png";
+import MySQL from "../assets/skills/MySQL.png";
+import NodeJS from "../assets/skills/Node-JS.png";
+import ReactJS from "../assets/skills/React.png";
+import Sass from "../assets/skills/Sass.png";
+import MaterializeCSS from "../assets/skills/MaterializeCSS.png";
+import Npm from "../assets/skills/Npm.png";
+import Bash from "../assets/skills/Bash.png";
+import Sequelize from "../assets/skills/Sequelize.png";
+import ExpressJS from "../assets/skills/ExpressJS.png";
+import JQuery from "../assets/skills/JQuery.png";
+import Tableau from "../assets/skills/Tableau.png";
 
-class Techstack extends Component {
-  state = {};
-  render() {
-    return (
-      <div>
-        <Navbar />
-        <main class="techstack">
-          <div className="title">
-            <h2 className="lg-heading">
-              Tech <span className="text-secondary">Stack</span>
-            </h2>
-          </div>
-          <div className="tech">
-            <div class="front">
-              <h2>Front-End</h2>
-              <ul>
-                <li className="javascript">
-                  <h4>Vanilla JavaScript </h4>
-                  <progress value="80" max="100"></progress>
-                </li>
-                <li className="html">
-                  <h4>HTML / HTML5 </h4>
-                  <progress value="99" max="100"></progress>
-                </li>
-                <li className="css">
-                  <h4>CSS / CSS3 </h4>
-                  <progress value="85" max="100"></progress>
-                </li>
-                <li className="jquery">
-                  <h4>JQuery </h4>
-                  <progress value="60" max="100"></progress>
-                </li>
-                <li className="react">
-                  <h4>REACT</h4>
-                  <progress value="40" max="100"></progress>
-                </li>
-                <li className="sass">
-                  <h4>SASS </h4>
-                  <progress value="75" max="100"></progress>
-                </li>
-              </ul>
-            </div>
+const Techstack = () => {
+  const frontend = [
+    { title: "HTML", className: "html", logo: HTML5 },
+    { title: "CSS", className: "css", logo: CSS3 },
+    { title: "JavaScript", className: "javascript", logo: JavaScript },
+    { title: "Sass", className: "sass", logo: Sass },
+    { title: "Materialize", className: "materialize", logo: MaterializeCSS },
+    { title: "React", className: "react", logo: ReactJS },
+    { title: "jQuery", className: "jquery", logo: JQuery },
+  ];
 
-            <div class="back">
-              <h2>Back-End</h2>
-              <ul>
-                <li className="node">
-                  <h4>Node JS </h4>
-                  <progress value="60" max="100"></progress>
-                </li>
-                <li className="express">
-                  <h4>Express JS</h4>
-                  <progress value="60" max="100"></progress>
-                </li>
-                <li className="bash">
-                  <h4>Linux / Bash Script </h4>
-                  <progress value="20" max="100"></progress>
-                </li>
-              </ul>
-            </div>
+  const backend = [
+    { title: "Node JS", className: "node", logo: NodeJS },
+    { title: "Express JS", className: "express", logo: ExpressJS },
+    { title: "Bash", className: "bash", logo: Bash },
+  ];
 
-            <div class="database">
-              <h2>Database & ORM</h2>
-              <ul>
-                <li className="sql">
-                  <h4>Microsoft SQL </h4>
-                  <progress value="80" max="100"></progress>
-                </li>
-                <li className="mysql">
-                  <h4>MySQL </h4>
-                  <progress value="80" max="100"></progress>
-                </li>
-                <li className="sequelize">
-                  <h4>Sequelize </h4>
-                  <progress value="75" max="100"></progress>
-                </li>
-                <li className="mongo">
-                  <h4>MongoDB </h4>
-                  <progress value="30" max="100"></progress>
-                </li>
-                <li className="mongoose">
-                  <h4>Mongoose </h4>
-                  <progress value="30" max="100"></progress>
-                </li>
-              </ul>
-            </div>
+  const database = [
+    { title: "MySQL", className: "mysql", logo: MySQL },
+    { title: "Sequelize", className: "sequelize", logo: Sequelize },
+    { title: "MongoDB & Mongoose", className: "mongo", logo: MongoDB },
+  ];
 
-            <div class="tools">
-              <h2>Other Tools and Languages</h2>
-              <ul>
-                <li className="ssmt">
-                  <h4>SQL Server Management Tools</h4>
-                  <progress value="70" max="100"></progress>
-                </li>
-                <li className="vscode">
-                  <h4>Visual Studio Code </h4>
-                  <progress value="80" max="100"></progress>
-                </li>
-                <li className="vs">
-                  <h4>Visual Studio </h4>
-                  <progress value="90" max="100"></progress>
-                </li>
-                <li className="java">
-                  <h4>Java </h4>
-                  <progress value="35" max="100"></progress>
-                </li>
-                <li className="c#">
-                  <h4>Microsoft C# </h4>
-                  <progress value="60" max="100"></progress>
-                </li>
-              </ul>
-            </div>
+  const others = [
+    { title: "Git", className: "git", logo: Git },
+    { title: "NPM", className: "npm", logo: Npm },
+    { title: "Tableau", className: "tableau", logo: Tableau },
+    { title: "Java", className: "Java", logo: Java },
+    { title: "C#", className: "csharp", logo: CSharp },
+  ];
 
-            <div class="analysis">
-              <h2>Data Analysis</h2>
-              <ul>
-                <li className="tableau">
-                  <h4>Tableau </h4>
-                  <progress value="40" max="100"></progress>
-                </li>
-                <li className="rapid">
-                  <h4>Rapid Miner </h4>
-                  <progress value="40" max="100"></progress>
-                </li>
-                <li className="tableau">
-                  <h4>Python </h4>
-                  <progress value="10" max="100"></progress>
-                </li>
-                <li className="rapid">
-                  <h4>D3.JS </h4>
-                  <progress value="0" max="100"></progress>
-                </li>
-              </ul>
-            </div>
-
-            <div class="cloud">
-              <h2>Cloud Services</h2>
-              <ul>
-                <li className="">
-                  <h4>Amazon EC2 </h4>
-                  <progress value="30" max="100"></progress>
-                </li>
-                <li className="">
-                  <h4>Amazon RDS </h4>
-                  <progress value="20" max="100"></progress>
-                </li>
-                <li className="">
-                  <h4>Amazon Elastic Beanstalk </h4>
-                  <progress value="30" max="100"></progress>
-                </li>
-                <li className="">
-                  <h4>Amazon Instances </h4>
-                  <progress value="20" max="100"></progress>
-                </li>
-              </ul>
+  return (
+    <div>
+      <Navbar />
+      <main class='techstack'>
+        <div className='title'>
+          <h2 className='lg-heading'>
+            Tech <span className='text-secondary'>Stack</span>
+          </h2>
+        </div>
+        <div className='tech'>
+          <div class='front'>
+            <h2>Frontend</h2>
+            <div>
+              {frontend.map((skill) => {
+                return <img src={skill.logo} alt={skill.title} />;
+              })}
             </div>
           </div>
-        </main>
-        <Footer />
-      </div>
-    );
-  }
-}
+          <div class='back'>
+            <h2>Backend</h2>
+
+            <div>
+              {backend.map((skill) => {
+                return <img src={skill.logo} alt={skill.title} />;
+              })}
+            </div>
+          </div>
+
+          <div class='database'>
+            <h2>Databases Management</h2>
+
+            <div>
+              {database.map((skill) => {
+                return <img src={skill.logo} alt={skill.title} />;
+              })}
+            </div>
+          </div>
+
+          <div class='tools'>
+            <h2>Other Tools & Languages</h2>
+
+            <div>
+              {others.map((skill) => {
+                return <img src={skill.logo} alt={skill.title} />;
+              })}
+            </div>
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
 export default Techstack;
