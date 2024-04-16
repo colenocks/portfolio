@@ -20,7 +20,7 @@ class Contact extends Component {
           <div className='boxes'>
             <div>
               <span className='text-secondary'>Email: </span>
-              enockscoleman@gmail.com
+              colenocks@yahoo.com
             </div>
             <div>
               <span className='text-secondary'>Phone: </span>+353(0)899791458
