@@ -1,5 +1,5 @@
-@import "myconfig";
-@import "navbar";
+@import 'myconfig';
+@import 'navbar';
 
 main {
   padding: 3rem;
@@ -31,23 +31,26 @@ main {
   padding: 1rem;
   .about-info {
     display: grid;
-    column-gap: 20px;
+    align-content: center;
+    column-gap: 70px;
     grid-template-columns: 1fr 2fr;
-    grid-template-areas: "bioimage bio";
+    grid-template-areas: 'bioimage bio';
+    padding-left: 30px;
+    margin-top: 50px;
 
     .bioimage {
       grid-area: bioimage;
       border: 3px solid $cyan;
       margin: auto;
       border-radius: 50px;
-      //image responsiveness
-      max-width: 50%;
+      width: 300px;
       height: auto;
       display: block;
     }
     .bio {
       text-align: start;
       grid-area: bio;
+      width: 50%;
     }
   }
 }
@@ -63,16 +66,18 @@ main {
     justify-content: center;
   }
 
-  .front,
-  .back,
-  .database,
-  .tools {
+  .skills {
     height: min-content;
-    background: rgba($color: #fff, $alpha: 0.9);
+    width: 60%;
+    background: rgba(lighten($lightGrey, 2), 0.5);
     text-align: center;
-    border-radius: 10px;
-    border-bottom: $mainBlue solid 10px;
-    margin-bottom: 20px;
+    border-radius: 5px;
+    border-bottom: $mainBlue solid 2px;
+    margin-top: 50px;
+
+    .express {
+      filter: grayscale(100%);
+    }
 
     h2 {
       width: 100%;
@@ -190,4 +195,4 @@ main {
   }
 }
 
-@import "mobile";
+@import 'mobile';

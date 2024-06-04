@@ -1,38 +1,38 @@
-import React, { Component } from "react";
-import "./scss/main.scss";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import './scss/main.scss';
+import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
   componentDidMount() {
-    const menuBtn = document.querySelector(".menu-btn");
-    const menu = document.querySelector(".menu");
-    const menuNav = document.querySelector(".menu-nav");
+    const menuBtn = document.querySelector('.menu-btn');
+    const menu = document.querySelector('.menu');
+    const menuNav = document.querySelector('.menu-nav');
 
-    let navItems = document.querySelectorAll(".nav-item");
+    let navItems = document.querySelectorAll('.nav-item');
 
     let showMenu = false;
 
     const toggleMenu = () => {
       if (!showMenu) {
-        menuBtn.classList.add("close");
-        menu.classList.add("show");
-        menuNav.classList.add("show");
-        navItems.forEach((item) => item.classList.add("show"));
+        menuBtn.classList.add('close');
+        menu.classList.add('show');
+        menuNav.classList.add('show');
+        navItems.forEach(item => item.classList.add('show'));
 
         //reset Menu State
         showMenu = true;
       } else {
-        menuBtn.classList.remove("close");
-        menu.classList.remove("show");
-        menuNav.classList.remove("show");
-        navItems.forEach((item) => item.classList.remove("show"));
+        menuBtn.classList.remove('close');
+        menu.classList.remove('show');
+        menuNav.classList.remove('show');
+        navItems.forEach(item => item.classList.remove('show'));
 
         //reset Menu State
         showMenu = false;
       }
     };
 
-    menuBtn.addEventListener("click", toggleMenu);
+    menuBtn.addEventListener('click', toggleMenu);
   }
   render() {
     return (
@@ -65,11 +65,6 @@ class Navbar extends Component {
               <li className="nav-item">
                 <Link to="/projects" className="nav-link">
                   My Projects
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/blog" className="nav-link">
-                  My Blog
                 </Link>
               </li>
               <li className="nav-item">

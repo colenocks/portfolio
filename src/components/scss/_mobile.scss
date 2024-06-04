@@ -51,19 +51,32 @@
     }
   }
 
+  .menu-btn {
+    display: block;
+  }
+
+  .menu {
+    visibility: hidden;
+
+    &.show {
+      visibility: visible;
+    }
+  }
+
   .about {
     .about-info {
       gap: 20px 0;
       grid-template-columns: 1fr;
       grid-template-areas:
-        "bioimage"
-        "bio";
+        'bioimage'
+        'bio';
 
       .bioimage {
-        max-width: 30%;
+        max-width: 150px;
       }
       .bio {
         text-align: center;
+        margin: 20px auto;
       }
     }
   }
@@ -108,20 +121,20 @@
     gap: 20px 0;
     grid-template-columns: 1fr;
     grid-template-areas:
-      "bioimage"
-      "bio";
+      'bioimage'
+      'bio';
   }
 
   .techstack {
     .tech {
       grid-template-columns: 1fr;
       grid-template-areas:
-        "front"
-        "database"
-        "back"
-        "analysis"
-        "cloud"
-        "tools";
+        'front'
+        'database'
+        'back'
+        'analysis'
+        'cloud'
+        'tools';
 
       ul {
         justify-content: center;

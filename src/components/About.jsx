@@ -1,28 +1,28 @@
-import React from "react";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
-import coleImage from "../assets/coleImage.jpg";
-import "./scss/main.scss";
+import React from 'react';
+import Footer from './Footer';
+import Navbar from './Navbar';
+import coleImage from '../assets/coleImage.png';
+import './scss/main.scss';
 
 const About = () => {
   return (
     <div>
       <Navbar />
-      <main className='about'>
-        <div className='title'>
-          <h2 className='lg-heading'>
-            About <span className='text-secondary'>Me</span>
+      <main className="about">
+        <div className="title">
+          <h2 className="lg-heading">
+            About <span className="text-secondary">Me</span>
           </h2>
         </div>
-        <div className='about-info'>
-          <img className='bioimage' src={coleImage} alt='Coleman Enocks' />
-          <div className='bio'>
-            <h3 className='text-secondary'>BIO</h3>
+        <div className="about-info">
+          <img className="bioimage" src={coleImage} alt="Coleman Enocks" />
+          <div className="bio">
+            <h3 className="text-secondary">BIO</h3>
             <p>
-              I am a Javascript Developer, I work well with Javascript, CSS,
-              Sass C#, React, Node, RestAPIs, SQL, MongoDB, Tableau, Git,
-              Bootstrap and Material-UI.
+              Hi, I'm Coleman Enocks, a Software Developer/Frontend Developer, I work well with Javascript, Typescript, TailwindCSS, Sass, React, Vue,
+              Node.js, Git, MySQL, MongoDB, UI Frameworks and more.
             </p>
+            <p>Connect with me, let's create some cool stuffs.</p>
           </div>
         </div>
       </main>
