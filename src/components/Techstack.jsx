@@ -34,17 +34,17 @@ const Techstack = () => {
   return (
     <div>
       <Navbar />
-      <main class="techstack">
+      <main className="techstack">
         <div className="title">
           <h2 className="lg-heading">
             Tech <span className="text-secondary">Stack</span>
           </h2>
         </div>
         <div className="tech">
-          <div class="skills">
+          <div className="skills">
             <div>
               {skills.map(skill => {
-                return <img src={skill.logo} alt={skill.title} />;
+                return <img src={skill.logo} alt={skill.title} key={skill.title} />;
               })}
             </div>
           </div>
